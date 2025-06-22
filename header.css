@@ -408,36 +408,44 @@ footer {
   .campo-cidade p { font-size: 14px; }
 }
 /* Começa tudo invisível */
+/* Esconde todas as imagens e textos do carrossel */
 .carousel-image,
 .carousel-text > div {
   opacity: 0;
+  position: absolute;
   transition: opacity 0.6s ease;
   z-index: 1;
 }
 
-/* Exibe a imagem 1 e texto 1 quando carousel1 está marcado */
-#carousel1:checked ~ section #tech-carousel .image1,
-#carousel1:checked ~ section #tech-carousel .text1 {
+/* Mostra a imagem/texto corretos com base no input checked */
+#carousel1:checked ~ .carousel-wrapper .image1,
+#carousel1:checked ~ .carousel-wrapper .text1 {
   opacity: 1;
 }
 
-/* Exibe a imagem 2 e texto 2 quando carousel2 está marcado */
-#carousel2:checked ~ section #tech-carousel .image2,
-#carousel2:checked ~ section #tech-carousel .text2 {
+#carousel2:checked ~ .carousel-wrapper .image2,
+#carousel2:checked ~ .carousel-wrapper .text2 {
   opacity: 1;
 }
 
-/* Exibe a imagem 3 e texto 3 quando carousel3 está marcado */
-#carousel3:checked ~ section #tech-carousel .image3,
-#carousel3:checked ~ section #tech-carousel .text3 {
+#carousel3:checked ~ .carousel-wrapper .image3,
+#carousel3:checked ~ .carousel-wrapper .text3 {
   opacity: 1;
 }
 
-/* Estilo opcional para setas */
+/* Setas bonitinhas */
 .arrow {
   cursor: pointer;
   font-size: 30px;
   color: #003019;
   padding: 10px;
   user-select: none;
+}
+
+/* Faz o texto não ocupar espaço quando invisível */
+.carousel-text > div {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
