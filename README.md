@@ -27,7 +27,6 @@ Este projeto faz parte do programa **Agrinho 2025**, com o tema **"Festejando a 
 
 👉 [Clique aqui para acessar o site online](https://sarraff01.github.io/agrinho2025)
 
-*(Substitua o link acima com o link do seu GitHub Pages depois que publicar.)*
 
 ## 🏷️ Tags
 
