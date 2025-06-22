@@ -407,3 +407,37 @@ footer {
   .campo-cidade h2 { font-size: 24px; }
   .campo-cidade p { font-size: 14px; }
 }
+/* Começa tudo invisível */
+.carousel-image,
+.carousel-text > div {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  z-index: 1;
+}
+
+/* Exibe a imagem 1 e texto 1 quando carousel1 está marcado */
+#carousel1:checked ~ section #tech-carousel .image1,
+#carousel1:checked ~ section #tech-carousel .text1 {
+  opacity: 1;
+}
+
+/* Exibe a imagem 2 e texto 2 quando carousel2 está marcado */
+#carousel2:checked ~ section #tech-carousel .image2,
+#carousel2:checked ~ section #tech-carousel .text2 {
+  opacity: 1;
+}
+
+/* Exibe a imagem 3 e texto 3 quando carousel3 está marcado */
+#carousel3:checked ~ section #tech-carousel .image3,
+#carousel3:checked ~ section #tech-carousel .text3 {
+  opacity: 1;
+}
+
+/* Estilo opcional para setas */
+.arrow {
+  cursor: pointer;
+  font-size: 30px;
+  color: #003019;
+  padding: 10px;
+  user-select: none;
+}
