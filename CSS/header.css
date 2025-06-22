@@ -1,0 +1,424 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+.hero-section {
+    width: 100%;
+    height: 100vh; 
+    background: url('/image-second.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .hero-content {
+    color: white;
+    font-family: 'Outfit', sans-serif;
+  }
+  
+  .hero-title {
+    font-size: 64px;
+    font-weight: 300;
+    margin: 0;
+  }
+  
+  .hero-subtitle {
+    font-size: 24px;
+    font-weight: 200;
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+#principal {
+    height: 770px;
+    background: url("/image-principal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    }
+
+    #mover {
+        width: 25%;
+        animation: float 3s ease-in-out infinite;
+        position: absolute;
+        top: 50px;
+        right: 5%;
+        z-index: 2;
+    }
+
+ @keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-40px);
+    }
+}
+.titulo {
+    color: white;
+    font-size: 55px;
+    margin: 0 auto;
+    padding-top: 150px;
+    text-align: center;
+    font-family: "Outfit";
+    max-width: 90%;
+}
+.italic {
+    font-weight: 300;
+}
+.subtitulo {
+    color: rgb(128, 128, 128);
+    font-family: "Outfit";
+    margin-top: 100px;
+    text-align: center;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#second {
+    background-color: white;
+    padding: 100px 40px;
+    display: flex;
+    justify-content: center;
+}
+.titulo-second{
+    color: rgb(0, 0, 0);
+    font-family: "Outfit";
+    font-size: 55px;
+}
+.subtitulo-second {
+    color: rgb(128, 128, 128);
+    font-family: "Outfit";
+    margin-top: 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: space-between;
+    gap: 20px; 
+  }
+  
+
+  .side-image {
+    width: 400px; 
+    height: auto;
+    margin-top: 10px;
+
+  }
+  .custom-play-button {
+    background-color: #ffffff;
+    color: #003019;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-family: "Outfit", sans-serif;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 30px auto 0;
+    transition: background-color 1.5s, transform 1.2s;
+    text-align: center;
+  }
+  
+  .custom-play-button:hover {
+    background-color: #003019;
+    color: white;
+    transform: scale(1.35);
+  }
+  .subtitulo-container {
+    text-align: center;
+    margin-top: -80px;
+  }
+  .scroll-button {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 12px 24px;
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 1.5s, transform 1.2s;
+}
+
+.scroll-button:hover {
+    background-color: #003019;
+    color: white;
+    transform: scale(1.35);
+}
+#cards-section {
+    background-color: #f4f4f4;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.cards-title {
+    font-family: "Outfit", sans-serif;
+    font-size: 48px;
+    margin-bottom: 60px;
+    color: #003019;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    font-family: "Outfit", sans-serif;
+    transition: transform 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card h3 {
+    font-size: 24px;
+    color: #003019;
+    margin-top: 20px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 15px;
+}
+
+.card-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background-color: #00aa55;
+    width: 0%;
+    transition: width 0.4s ease;
+}
+
+/* Hover */
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card:hover .card-bar {
+    width: 100%;
+}
+.campo-cidade {
+  background-color: #f3f3f3;
+  padding: 80px 40px;
+  font-family: "Outfit", sans-serif;
+  color: #222;
+  line-height: 1.6;
+}
+
+.campo-cidade h2 {
+  font-size: 42px;
+  margin-bottom: 30px;
+  color: #003019;
+  text-align: center;
+}
+
+.campo-cidade p {
+  max-width: 900px;
+  margin: 0 auto 20px auto;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.accessibility-controls {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+}
+.accessibility-button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-family: Outfit, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Aumenta apenas o tamanho da fonte quando ativado */
+#accessibility-toggle:checked ~ * {
+  font-size: 1.2em !important;
+}
+
+/* Aqui começa o CSS que faltava para o carrossel funcionar */
+
+.carousel-image {
+  opacity: 0;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.6s ease;
+  z-index: 1;
+}
+
+.carousel-text > div {
+  opacity: 0;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  transition: opacity 0.6s ease;
+  z-index: 1;
+}
+
+/* Carrossel - imagens */
+#carousel1:checked ~ .carousel-wrapper .carousel-images .image1 {
+  opacity: 1;
+  z-index: 3;
+}
+#carousel1:checked ~ .carousel-wrapper .carousel-images .image2,
+#carousel1:checked ~ .carousel-wrapper .carousel-images .image3 {
+  opacity: 0;
+  z-index: 1;
+}
+
+#carousel2:checked ~ .carousel-wrapper .carousel-images .image2 {
+  opacity: 1;
+  z-index: 3;
+}
+#carousel2:checked ~ .carousel-wrapper .carousel-images .image1,
+#carousel2:checked ~ .carousel-wrapper .carousel-images .image3 {
+  opacity: 0;
+  z-index: 1;
+}
+
+#carousel3:checked ~ .carousel-wrapper .carousel-images .image3 {
+  opacity: 1;
+  z-index: 3;
+}
+#carousel3:checked ~ .carousel-wrapper .carousel-images .image1,
+#carousel3:checked ~ .carousel-wrapper .carousel-images .image2 {
+  opacity: 0;
+  z-index: 1;
+}
+
+/* Carrossel - textos */
+#carousel1:checked ~ .carousel-wrapper .carousel-text .text1 {
+  opacity: 1;
+  z-index: 3;
+  position: relative;
+}
+#carousel1:checked ~ .carousel-wrapper .carousel-text .text2,
+#carousel1:checked ~ .carousel-wrapper .carousel-text .text3 {
+  opacity: 0;
+  z-index: 1;
+  position: absolute;
+}
+
+#carousel2:checked ~ .carousel-wrapper .carousel-text .text2 {
+  opacity: 1;
+  z-index: 3;
+  position: relative;
+}
+#carousel2:checked ~ .carousel-wrapper .carousel-text .text1,
+#carousel2:checked ~ .carousel-wrapper .carousel-text .text3 {
+  opacity: 0;
+  z-index: 1;
+  position: absolute;
+}
+
+#carousel3:checked ~ .carousel-wrapper .carousel-text .text3 {
+  opacity: 1;
+  z-index: 3;
+  position: relative;
+}
+#carousel3:checked ~ .carousel-wrapper .carousel-text .text1,
+#carousel3:checked ~ .carousel-wrapper .carousel-text .text2 {
+  opacity: 0;
+  z-index: 1;
+  position: absolute;
+}
+
+
+/* Botões padrão */
+.carousel-controls label {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  background: #003019;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+.carousel-arrows label.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 48px;
+  color: #003019;
+  background: rgba(255, 255, 255, 0.8);
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s;
+  z-index: 5;
+}
+
+.carousel-arrows label.arrow:hover {
+  background-color: #003019;
+  color: white;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+/* Inicialmente esconda todas as setas */
+#left-arrow-1,
+#right-arrow-1,
+#left-arrow-2,
+#right-arrow-2,
+#left-arrow-3,
+#right-arrow-3 {
+  display: none;
+}
+
+/* Mostrar setas conforme o slide ativo */
+#carousel1:checked ~ .carousel-wrapper #left-arrow-1,
+#carousel1:checked ~ .carousel-wrapper #right-arrow-1 {
+  display: block;
+}
+
+#carousel2:checked ~ .carousel-wrapper #left-arrow-2,
+#carousel2:checked ~ .carousel-wrapper #right-arrow-2 {
+  display: block;
+}
+
+#carousel3:checked ~ .carousel-wrapper #left-arrow-3,
+#carousel3:checked ~ .carousel-wrapper #right-arrow-3 {
+  display: block;
+}
+
+footer {
+  background-color: black;
+  margin-top: 10px;
+}
