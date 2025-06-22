@@ -9,7 +9,7 @@ body {
 .hero-section {
   width: 100%;
   height: 100vh; 
-  background: url('/image-second.jpg') no-repeat center center;
+  background: url('image-second.jpg') no-repeat center center;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -34,7 +34,7 @@ body {
 }
 #principal {
   height: 770px;
-  background: url("/image-principal.jpg");
+  background: url("image-principal.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
